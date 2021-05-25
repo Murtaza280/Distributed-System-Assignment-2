@@ -24,4 +24,8 @@ public class MyClient {
 		send("REDY");
 		send("QUIT");
 	}
+	//Sending message to server
+	public static void send(String str) throws Exception {
+		receive();
+	}
 }
