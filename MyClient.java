@@ -26,6 +26,9 @@ public class MyClient {
 	}
 	//Sending message to server
 	public static void send(String str) throws Exception {
+
+		dout.print(str);
+		
 		receive();
 	}
 }
