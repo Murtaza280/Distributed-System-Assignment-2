@@ -31,10 +31,10 @@ public class MyClient {
 
 		String[] info = response.split(" ");
 		int[] data = new int[info.length - 1];
-		
+
 		for (int i = 1; i < info.length; i++) {
 		}
-
+		return data;
 	}
 
 	//Sending message to server
