@@ -28,9 +28,11 @@ public class MyClient {
 	//Extracting information about the job into an integer array.
 
 	public static int[] getJobInfo() {
+		
+		String[] info = response.split(" ");
 
 	}
-	
+
 	//Sending message to server
 
 	public static void send(String str) throws Exception {
