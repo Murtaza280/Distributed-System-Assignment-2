@@ -33,6 +33,7 @@ public class MyClient {
 		int[] data = new int[info.length - 1];
 
 		for (int i = 1; i < info.length; i++) {
+			data[i - 1] = Integer.parseInt(info[i]);
 		}
 		return data;
 	}
