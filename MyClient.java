@@ -24,6 +24,13 @@ public class MyClient {
 		send("REDY");
 		send("QUIT");
 	}
+
+	//Extracting information about the job into an integer array.
+
+	public static int[] getJobInfo() {
+
+	}
+	
 	//Sending message to server
 
 	public static void send(String str) throws Exception {
