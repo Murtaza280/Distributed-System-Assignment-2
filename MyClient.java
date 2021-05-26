@@ -28,8 +28,9 @@ public class MyClient {
 	//Extracting information about the job into an integer array.
 
 	public static int[] getJobInfo() {
-		
+
 		String[] info = response.split(" ");
+		int[] data = new int[info.length - 1];
 
 	}
 
