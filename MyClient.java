@@ -53,7 +53,6 @@ public class MyClient {
 
 		int SIZE = Math.max(1000, nRec * nLen + 1);
 		byte[] bytes = new byte[SIZE];
-
 		din.read(bytes);
 
 		String str = new String(bytes, StandardCharsets.UTF_8);
