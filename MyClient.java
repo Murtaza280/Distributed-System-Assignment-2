@@ -51,5 +51,8 @@ public class MyClient {
 	//	Reading the message from the server
 	public static void receive() throws Exception {
 		
+		int SIZE = Math.max(1000, nRec * nLen + 1);
+		byte[] bytes = new byte[SIZE];
+
 	}
 }
