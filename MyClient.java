@@ -58,7 +58,7 @@ public class MyClient {
 
 		String str = new String(bytes, StandardCharsets.UTF_8);
 		System.out.println("Server: "+str);
-		response = str;
+		response = str.trim();
 
 	}
 }
