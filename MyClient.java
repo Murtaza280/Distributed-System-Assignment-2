@@ -43,8 +43,13 @@ public class MyClient {
 
 		dout.print(str);
 		dout.flush();
-		
+
 		System.out.println("Client: " + str);
 		receive();
+	}
+
+	//	Reading the message from the server
+	public static void receive() throws Exception {
+		
 	}
 }
