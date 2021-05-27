@@ -37,13 +37,12 @@ public class MyClient {
 			return data;
 	}
 
-	//Sending message to server
+	// Sending message to server
 
 	public static void send(String str) throws Exception {
 
 		dout.print(str+"\n");
-		dout.flush();
-
+		dout.flush();\
 		System.out.println("Client: " + str);
 		receive();
 	}
