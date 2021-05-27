@@ -55,8 +55,9 @@ public class MyClient {
 		byte[] bytes = new byte[SIZE];
 
 		din.read(bytes);
-		
+
 		String str = new String(bytes, StandardCharsets.UTF_8);
+		response = str
 
 	}
 }
