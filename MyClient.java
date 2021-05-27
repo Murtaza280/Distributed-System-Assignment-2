@@ -43,6 +43,7 @@ public class MyClient {
 	public static void send(String str) throws Exception {
 
 		dout.print(str);
+		dout.flush();
 		System.out.println("Client: " + str);
 		receive();
 	}
