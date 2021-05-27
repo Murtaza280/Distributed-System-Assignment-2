@@ -31,11 +31,10 @@ public class MyClient {
 
 		String[] info = response.split(" ");
 		int[] data = new int[info.length - 1];
-
-		for (int i = 1; i < info.length; i++) {
-			data[i - 1] = Integer.parseInt(info[i]);
-		}
-		return data;
+			for (int i = 1; i < info.length; i++) {
+				data[i - 1] = Integer.parseInt(info[i]);
+			}
+			return data;
 	}
 
 	//Sending message to server
@@ -44,6 +43,7 @@ public class MyClient {
 
 		dout.print(str);
 		dout.flush();
+		
 		System.out.println("Client: " + str);
 		receive();
 	}
