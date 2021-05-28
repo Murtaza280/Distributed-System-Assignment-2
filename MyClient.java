@@ -24,6 +24,9 @@ public class MyClient {
 		send("REDY");
 		send("QUIT");
 	}
+	public static String findLargest() throws Exception{
+		
+	}
 
 	//Extracting information about the job into an integer array.
 
