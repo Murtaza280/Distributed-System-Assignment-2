@@ -25,7 +25,12 @@ public class MyClient {
 		send("QUIT");
 	}
 	public static String findLargest() throws Exception{
-		
+		send("GETS All");
+		String temp=response;
+		String[] data=temp.split(" ");
+		nRec = Integer.parseInt(data[1]);
+		nLen = Integer.parseInt(data[2]);
+
 	}
 
 	//Extracting information about the job into an integer array.
