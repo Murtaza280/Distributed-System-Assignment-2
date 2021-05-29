@@ -41,7 +41,10 @@ public class MyClient {
 			String[] j=i.split(" ");
 			String n = j[0];
 			int ds = Integer.parseInt(j[4].trim());
-
+			if(ds>disk_size) {
+				name = n;
+				disk_size=ds;
+			}
 		}
 		return name+" 0";
 
