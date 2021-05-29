@@ -30,6 +30,12 @@ public class MyClient {
 		String[] data=temp.split(" ");
 		nRec = Integer.parseInt(data[1]);
 		nLen = Integer.parseInt(data[2]);
+		send("OK");
+		temp = response;
+		send("OK");
+		String[] servers = temp.split("\n");
+		String name="";
+		int disk_size=0;
 
 	}
 
