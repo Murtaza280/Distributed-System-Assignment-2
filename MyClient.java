@@ -36,6 +36,10 @@ public class MyClient {
 		String[] servers = temp.split("\n");
 		String name="";
 		int disk_size=0;
+		for(String i : servers) {
+			
+		}
+		return name+" 0";
 
 	}
 
