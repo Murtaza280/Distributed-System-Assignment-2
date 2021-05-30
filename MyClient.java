@@ -22,6 +22,14 @@ public class MyClient {
 		send("HELO");
 		send("AUTH " + System.getProperty("user.name"));
 		send("REDY");
+		while (!(response.equals("NONE"))) {
+			if (!(response.startsWith("JOBN") || response.startsWith("JOBP"))) {
+				if (response.startsWith("JCPL")) {
+					send("REDY");
+				}
+				continue;
+			}
+		}
 		send("QUIT");
 
 		din.close();
