@@ -22,6 +22,7 @@ public class MyClient {
 		send("HELO");
 		send("AUTH " + System.getProperty("user.name"));
 		send("REDY");
+
 		while (!(response.equals("NONE"))) {
 			if (!(response.startsWith("JOBN") || response.startsWith("JOBP"))) {
 				if (response.startsWith("JCPL")) {
@@ -33,7 +34,10 @@ public class MyClient {
 			if(largest.equals(" ")){
 				largest=findLargest();
 			}
+			send("SCHD "+data[1]+" " + largest);
+			send("REDY");
 		}
+		
 		send("QUIT");
 
 		din.close();
