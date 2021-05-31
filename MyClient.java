@@ -29,6 +29,10 @@ public class MyClient {
 				}
 				continue;
 			}
+			int[] data = getJobInfo();
+			if(largest.equals(" ")){
+				largest=findLargest();
+			}
 		}
 		send("QUIT");
 
